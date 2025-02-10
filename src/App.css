@@ -476,7 +476,11 @@ nav ul li a:hover {
   }
 
   /* Responsive Design for Projects Section */
-  
+  @media (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 
   #projects h2 {
     animation: fadeInDown 1.2s ease-in-out;
@@ -559,6 +563,12 @@ nav ul li a:hover {
     transform: scale(1.05);
   }
 
+  /* Responsive Design for Contact Section */
+  @media (max-width: 768px) {
+    #contact {
+      padding: 60px 5%;
+    }
+
     .contact-intro {
       font-size: 0.95rem;
     }
@@ -592,7 +602,12 @@ nav ul li a:hover {
   }
 
   /* 📱 Responsive Design */
- 
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+
     .hero-content {
       max-width: 100%;
     }
@@ -716,9 +731,17 @@ nav ul li a:hover {
     border: 2px solid rgba(255, 20, 147, 0.8);
   }
 
+  @media (max-width: 768px) {
+    .large-card {
+      width: 100%;
+    }
+  }
 
-
-  
+  @media (max-width: 768px) {
+    .sentence-card {
+      width: 100%;
+    }
+  }
 
   body.light-mode .theme-toggle:hover {
     background: #d81b60;
@@ -1506,108 +1529,66 @@ nav ul li a:hover {
 .contact-form button:hover {
   background-color: #0077ff;
 }
-
-
-  .rounded-image {
-    width: 150px;
-    height: 150px;
-  }
+/* 📱 General Mobile Styles */
 @media (max-width: 768px) {
-  /* 🛠 Global Adjustments */
-  body,
-  html {
+  body {
     font-size: 14px;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
-  /* Navbar */
   nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    text-align: center;
+    gap: 15px;
   }
 
-  nav ul li {
-    width: 100%;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-
-  /* Hero Section */
   .hero {
     flex-direction: column;
-    padding: 50px 20px;
-    text-align: center;
+    padding: 50px 5%;
   }
 
   .hero-content {
     max-width: 100%;
   }
 
-  .hero h1 {
+  .hero-content h1 {
     font-size: 2rem;
   }
 
-  .hero p {
+  .hero-content p {
     font-size: 1rem;
   }
 
   .hero-image img {
-    width: 100%;
-    max-width: 250px;
-    margin: 20px auto;
+    width: 180px;
   }
 
-  .buttons {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  /* About Section */
   .about-section {
     flex-direction: column;
-    padding: 20px;
+    padding: 50px 5%;
   }
 
   .about-part {
-    width: 100%;
-    max-width: 350px;
-    margin-bottom: 20px;
+    max-width: 100%;
   }
 
   .rounded-image {
     width: 150px;
     height: 150px;
-    margin-bottom: 15px;
   }
 
-  /* Project Section */
   .project-grid {
     grid-template-columns: 1fr;
   }
 
-  .project-card {
-    padding: 15px;
+  #contact {
+    padding: 50px 5%;
   }
 
-  .project-card h3 {
-    font-size: 1.2rem;
-  }
-
-  /* Contact Form */
   .contact-form {
-    padding: 20px;
-    max-width: 100%;
+    gap: 10px;
   }
 
   .contact-form input,
@@ -1616,18 +1597,86 @@ nav ul li a:hover {
     padding: 10px;
   }
 
-  .contact-form button {
+  .large-card {
+    width: 100%;
+    padding: 20px;
     font-size: 1rem;
   }
 
-  /* Footer */
-  footer {
-    font-size: 0.9rem;
+  .tech-stack-section {
+    padding: 50px 5%;
+  }
+
+  .cube {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cube-face {
+    width: 100px;
+    height: 100px;
   }
 }
 
+/* 📱 Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
 
+  nav .logo {
+    font-size: 1.5rem;
+  }
 
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
 
+  .hero-content p {
+    font-size: 0.9rem;
+  }
 
+  .hero-image img {
+    width: 150px;
+  }
 
+  .about-section {
+    padding: 30px 5%;
+  }
+
+  .about-part {
+    padding: 10px;
+  }
+
+  .project-card {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .tech-stack-section h2 {
+    font-size: 2rem;
+  }
+
+  .cube {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cube-face {
+    font-size: 0.8rem;
+  }
+
+  #contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .glitch-text,
+  .glitch-text1 {
+    font-size: 1.8rem;
+  }
+}
