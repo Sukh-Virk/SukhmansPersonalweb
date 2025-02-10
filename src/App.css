@@ -1529,3 +1529,65 @@ nav ul li a:hover {
 .contact-form button:hover {
   background-color: #0077ff;
 }
+
+@media (max-width: 768px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: auto;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-part {
+    min-width: 100%;
+    padding: 15px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cube {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-form {
+    padding: 0 20px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+
+  .large-card {
+    width: 100%;
+  }
+}
+
