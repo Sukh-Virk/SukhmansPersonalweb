@@ -1529,65 +1529,97 @@ nav ul li a:hover {
 .contact-form button:hover {
   background-color: #0077ff;
 }
-
 @media (max-width: 768px) {
   body,
   html {
     font-size: 14px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
   nav {
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    padding: 0;
+  }
+
+  nav ul li {
+    width: 100%;
   }
 
   .hero {
     flex-direction: column;
+    padding: 50px 5%;
     text-align: center;
   }
 
   .hero-content {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0;
   }
 
   .hero-image img {
-    width: 200px;
+    width: 100%;
+    max-width: 250px;
     height: auto;
+    margin: 20px auto;
   }
 
   .about-section {
     flex-direction: column;
+    padding: 30px 5%;
   }
 
   .about-part {
     min-width: 100%;
-    padding: 15px;
+    padding: 20px;
   }
 
   .project-grid {
     grid-template-columns: 1fr;
   }
 
+  .project-card {
+    padding: 15px;
+  }
+
   .cube {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   .contact-form {
-    padding: 0 20px;
+    padding: 10px 5%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+    padding: 12px;
   }
 
   .footer {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    padding: 10px;
   }
 
   .large-card {
     width: 100%;
+    padding: 20px;
+  }
+
+  .rounded-image {
+    width: 150px;
+    height: 150px;
   }
 }
+
 
