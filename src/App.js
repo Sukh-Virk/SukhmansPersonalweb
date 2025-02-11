@@ -3,7 +3,7 @@ import "./App.css";
 import myImage from "./asset/unnamed.jpg";
 import screenImage from "./asset/screen.png";
 import GithubStatsChart from "./GithubStatsChart.js";
-import ContactForm from "./Contact";
+import ContactForm from "./Contact.jsx";
 
 function App() {
   const sentences = [
@@ -245,9 +245,6 @@ function App() {
                 <a href="#experience">Experience</a>
               </li>
               <li>
-                <a href="#stats">Stats</a>
-              </li>
-              <li>
                 <a href="#contact">Contact</a>
               </li>
             </ul>
@@ -265,7 +262,7 @@ function App() {
                 <a href="#contact" className="button button-primary">
                   Hire Me 🚀
                 </a>
-                <a href="#projects" className="button button-secondary">
+                <a href="#experience" className="button button-secondary">
                   My Work 📂
                 </a>
               </div>
@@ -280,6 +277,7 @@ function App() {
 
             <div className="hero-image"></div>
           </section>
+
           <section id="about">
             <h2 className="glitch-text" data-text="About Me">
               About Me
@@ -356,11 +354,13 @@ function App() {
                 <span>Tools: Python, Pandas, Matplotlib</span>
               </div>
               <div className="large-card">
-                <h3>🎮 Bot Development</h3>
+                <h3>Cyber Security</h3>
                 <p>
-                  Developed a game bot in Python for Discord servers.
-                  Implemented trivia games and server management features with
-                  real-time interaction.
+                  Developed a Python-based dark web scraper to monitor and
+                  analyze criminal activities. Automated data collection from
+                  hidden services for threat intelligence and risk analysis.
+                  Implemented real-time alerts and sentiment analysis to
+                  identify emerging threats in the dark web ecosystem.
                 </p>
                 <span>Tools: Python, Discord API</span>
               </div>
