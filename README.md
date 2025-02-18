@@ -29,3 +29,6 @@ JavaScript 🛠
 React.js ⚛️ (future updates!)
 
 Netlify for hosting 🌍
+
+# Visit here
+sukhvirk.netlify.app
